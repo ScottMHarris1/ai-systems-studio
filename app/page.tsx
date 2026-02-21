@@ -1,173 +1,258 @@
+'use client';
+
+import React from "react";
+
 export default function Home() {
   return (
-    <main style={{ fontFamily: "system-ui, -apple-system, Segoe UI, Roboto, Arial" }}>
-      <div style={{ maxWidth: 980, margin: "0 auto", padding: "48px 20px" }}>
+    <main
+      style={{
+        fontFamily: "system-ui, -apple-system, Segoe UI, Roboto, Arial",
+        background: "#000",
+        color: "#fff",
+        minHeight: "100vh",
+      }}
+    >
+      <div
+        style={{
+          maxWidth: 980,
+          margin: "0 auto",
+          padding: "48px 20px",
+        }}
+      >
+
         {/* HERO */}
         <section style={{ padding: "32px 0 24px 0" }}>
           <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
-            <div style={{ fontSize: 14, opacity: 0.8 }}>
+
+            <div style={{ fontSize: 14, opacity: 0.7 }}>
               AI Transformation • Revenue Architecture • Agentic AI Enablement
             </div>
 
-            <h1 style={{ fontSize: 44, lineHeight: 1.1, margin: 0 }}>
-  I design and deploy AI-powered revenue and operating systems for enterprise GTM teams.
-</h1>
+            <h1
+              style={{
+                fontSize: 44,
+                lineHeight: 1.1,
+                margin: 0,
+                fontWeight: 700,
+              }}
+            >
+              I design and deploy AI-powered revenue and operating systems for enterprise GTM teams.
+            </h1>
 
-
-            <p style={{ fontSize: 18, lineHeight: 1.5, opacity: 0.9, maxWidth: 820 }}>
-              I help enterprise teams deploy practical agentic AI workflows (RFP automation, knowledge copilots,
-              lifecycle intelligence, and enablement) that improve speed, quality, and visibility across GTM.
+            <p
+              style={{
+                fontSize: 18,
+                lineHeight: 1.5,
+                opacity: 0.9,
+                maxWidth: 820,
+              }}
+            >
+              I help enterprise teams deploy practical agentic AI workflows — including knowledge copilots, RFP automation, lifecycle intelligence, and revenue operating systems — that improve speed, quality, and visibility across GTM.
             </p>
 
-            <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 8 }}>
-              <a
-                href="#contact"
-                style={{
-                  padding: "10px 14px",
-                  borderRadius: 10,
-                  textDecoration: "none",
-                  border: "1px solid #111",
-                  display: "inline-block",
-                  fontWeight: 600,
-                }}
-              >
-                Book a 15-min intro
-              </a>
-              <a
-                href="#proof"
-                style={{
-                  padding: "10px 14px",
-                  borderRadius: 10,
-                  textDecoration: "none",
-                  border: "1px solid #ddd",
-                  display: "inline-block",
-                  fontWeight: 600,
-                }}
-              >
-                See transformation impact
-              </a>
+            <div style={{ fontSize: 13, opacity: 0.6 }}>
+              Background: Google • McKinsey • Amazon • Enterprise AI Transformation
             </div>
 
-            <div style={{ fontSize: 13, opacity: 0.75, marginTop: 8 }}>
-            Background: Google (Global Sales Strategy) • McKinsey • Amazon • Enterprise AI Transformation & Commercialization
-
-            </div>
           </div>
         </section>
 
+
         {/* PROOF */}
-        <section id="proof" style={{ padding: "28px 0" }}>
-          <h2 style={{ fontSize: 22, margin: "0 0 12px 0" }}>Selected Transformation Impact</h2>
-          <ul style={{ margin: 0, paddingLeft: 18, lineHeight: 1.6 }}>
+        <section style={{ padding: "28px 0" }}>
+
+          <h2 style={{ fontSize: 22, marginBottom: 16 }}>
+            Selected Transformation Impact
+          </h2>
+
+          <ul
+            style={{
+              paddingLeft: 20,
+              lineHeight: 1.8,
+              display: "flex",
+              flexDirection: "column",
+              gap: 10,
+            }}
+          >
+
             <li>
-              Delivered <strong>$750M+</strong> cumulative enterprise value across Google, Amazon, Kraft Foods, McKinsey, and enterprise AI deployments
+              Delivered <strong>$750M+</strong> cumulative enterprise value across Google, Amazon, Kraft Foods, McKinsey, and AI deployments
             </li>
+
             <li>
-              Led global revenue and lifecycle transformation supporting <strong>14,000+</strong> enterprise sellers; increased product adoption{" "}
-              <strong>39% → 83%</strong> and exceeded revenue targets by <strong>17%</strong>
+              Led global GTM transformation supporting <strong>14,000+ sellers</strong>; increased adoption <strong>39% → 83%</strong>
             </li>
+
             <li>
-              Founded Pricing Center of Excellence at Kraft Foods delivering <strong>$253M</strong> incremental enterprise value and{" "}
-              <strong>$10.2M</strong> pricing uplift
+              Founded Kraft Foods Pricing Center of Excellence generating <strong>$253M enterprise value</strong>
             </li>
+
             <li>
-              Grew SmartThink client billings by <strong>$57M</strong> and improved ROAS by <strong>4.2x</strong> through AI-driven
-              segmentation, GTM architecture, and lifecycle optimization
+              Grew SmartThink billings by <strong>$57M</strong> and improved ROAS <strong>4.2x</strong>
             </li>
+
             <li>
-              Generated <strong>$35M+</strong> incremental revenue at Amazon and grew category revenue <strong>42% YoY</strong> while reducing
-              vendor service costs by <strong>34%</strong>
+              Generated <strong>$35M+</strong> incremental Amazon revenue; grew category <strong>42% YoY</strong>
             </li>
+
             <li>
-              Designed and deployed agentic AI GTM workflows improving conversion rates <strong>12.7%–22.4%</strong> and reducing manual workload{" "}
-              by <strong>40%+</strong>
+              Deployed agentic AI workflows improving conversion rates <strong>12–22%</strong> and reducing manual work <strong>40%+</strong>
             </li>
+
           </ul>
+
         </section>
 
-        {/* OFFERS */}
+
+        {/* SERVICES */}
         <section style={{ padding: "28px 0" }}>
-          <h2 style={{ fontSize: 22, margin: "0 0 12px 0" }}>How I help</h2>
+
+          <h2 style={{ fontSize: 22, marginBottom: 16 }}>
+            Core Engagement Models
+          </h2>
+
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+              gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))",
+              gap: 14,
+            }}
+          >
+
+            <div style={card}>
+              <div style={cardTitle}>
+                AI Sales Enablement Copilot
+              </div>
+
+              <ul style={cardList}>
+                <li>Knowledge copilots over internal GTM data</li>
+                <li>RFP and proposal automation</li>
+                <li>Search-to-answer acceleration</li>
+              </ul>
+            </div>
+
+
+            <div style={card}>
+              <div style={cardTitle}>
+                Agentic Revenue Workflows
+              </div>
+
+              <ul style={cardList}>
+                <li>Automated account research and outreach</li>
+                <li>Proposal assembly and lifecycle tracking</li>
+                <li>CRM-integrated revenue intelligence</li>
+              </ul>
+            </div>
+
+
+            <div style={card}>
+              <div style={cardTitle}>
+                Fractional Revenue & AI Leadership
+              </div>
+
+              <ul style={cardList}>
+                <li>Fractional CRO / VP Sales</li>
+                <li>AI GTM architecture leadership</li>
+                <li>Revenue operating system design</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </section>
+
+
+        {/* CONTACT */}
+        <section style={{ padding: "36px 0" }}>
+
+          <h2 style={{ fontSize: 22, marginBottom: 16 }}>
+            Contact
+          </h2>
+
+          <div
+            style={{
+              border: "1px solid rgba(255,255,255,0.15)",
+              borderRadius: 14,
+              padding: 20,
+              maxWidth: 540,
+              display: "flex",
+              flexDirection: "column",
               gap: 12,
             }}
           >
-            {[
-              {
-                title: "AI Sales Enablement Copilot (RAG)",
-                desc:
-                  "A secure knowledge assistant over your sales assets: playbooks, RFx library, battlecards, case studies — with citations and guardrails.",
-                bullets: ["Search-to-answer uplift", "Time-to-first-draft reduction", "Role-based access + governance"],
-              },
-              {
-                title: "RFP / Proposal Automation",
-                desc:
-                  "Generate high-quality first drafts for RFIs/RFPs with structured prompts, review checks, and content governance.",
-                bullets: ["30%+ faster turnaround", "Consistency & compliance", "Reusable templates"],
-              },
-              {
-                title: "AI Revenue Operating System (Agentic GTM)",
-                desc:
-                  "Multi-step workflows that research accounts, draft outreach, assemble proposals, and generate follow-ups — integrated with CRM for visibility.",
-                bullets: ["Pipeline velocity", "Lifecycle intelligence", "Operational execution at scale"],
-              },
-            ].map((card) => (
-              <div
-                key={card.title}
-                style={{
-                  border: "1px solid #eee",
-                  borderRadius: 14,
-                  padding: 16,
-                }}
-              >
-                <div style={{ fontWeight: 800, marginBottom: 8 }}>{card.title}</div>
-                <div style={{ opacity: 0.9, marginBottom: 10, lineHeight: 1.45 }}>{card.desc}</div>
-                <ul style={{ margin: 0, paddingLeft: 18, lineHeight: 1.6, opacity: 0.9 }}>
-                  {card.bullets.map((b) => (
-                    <li key={b}>{b}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+
+            <div>
+              Email:{" "}
+              <strong>
+                Scott.M.Harris.1@gmail.com
+              </strong>
+            </div>
+
+            <div>
+              LinkedIn:{" "}
+              <strong>
+                linkedin.com/in/mrscottharris
+              </strong>
+            </div>
+
+
+            {/* CALENDLY BUTTON */}
+            <a
+              href="https://calendly.com/scott-m-harris-1/15min"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                marginTop: 10,
+                padding: "14px 18px",
+                borderRadius: 10,
+                background: "#fff",
+                color: "#000",
+                textDecoration: "none",
+                fontWeight: 600,
+                textAlign: "center",
+                display: "inline-block",
+              }}
+            >
+              Schedule Executive Intro Call
+            </a>
+
           </div>
+
         </section>
 
-        {/* CONTACT */}
-        <section id="contact" style={{ padding: "28px 0" }}>
-          <h2 style={{ fontSize: 22, margin: "0 0 12px 0" }}>Contact</h2>
-          <p style={{ marginTop: 0, opacity: 0.9 }}>
-            If you’re scaling GTM and want AI systems that drive measurable outcomes, send a note:
-          </p>
 
-          <div
-            style={{
-              border: "1px solid #eee",
-              borderRadius: 14,
-              padding: 16,
-              display: "grid",
-              gap: 10,
-              maxWidth: 520,
-            }}
-          >
-            <div style={{ fontSize: 14, opacity: 0.85 }}>
-              Email: <strong>Scott.M.Harris.1@gmail.com</strong>
-            </div>
-            <div style={{ fontSize: 14, opacity: 0.85 }}>
-              LinkedIn: <strong>linkedin.com/in/mrscottharris</strong>
-            </div>
-            <div style={{ fontSize: 14, opacity: 0.75 }}>
-              Next step: add a simple form + calendar link (we’ll do this next).
-            </div>
-          </div>
-        </section>
-
-        <footer style={{ padding: "36px 0 12px 0", fontSize: 12, opacity: 0.7 }}>
+        {/* FOOTER */}
+        <footer
+          style={{
+            marginTop: 40,
+            fontSize: 12,
+            opacity: 0.6,
+          }}
+        >
           © {new Date().getFullYear()} Scott Michael Harris — AI Transformation & Revenue Architecture
         </footer>
+
+
       </div>
     </main>
   );
 }
+
+
+/* CARD STYLES */
+
+const card: React.CSSProperties = {
+  border: "1px solid rgba(255,255,255,0.15)",
+  borderRadius: 14,
+  padding: 16,
+};
+
+const cardTitle: React.CSSProperties = {
+  fontWeight: 700,
+  marginBottom: 10,
+};
+
+const cardList: React.CSSProperties = {
+  paddingLeft: 18,
+  lineHeight: 1.6,
+};

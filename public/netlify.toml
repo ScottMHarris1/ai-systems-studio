@@ -1,0 +1,7 @@
+[build]
+  command = "npm run build"
+  publish = "out"
+
+# Ensure Netlify does NOT treat this as a Next runtime deploy
+[build.environment]
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
